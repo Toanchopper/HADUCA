@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="13"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="Lựa chọn bánh"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"/>
+    <GridView
+        android:id="@+id/cakegrid"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/list_shape"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:numColumns="4"
+        android:padding="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Bộ lọc"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+        <Spinner
+            android:background="@drawable/list_shape"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/optionspinner"
+            android:layout_width="225dp"
+            android:layout_height="60dp"
+            />
+    </LinearLayout>
+       <Button
+           android:id="@+id/openmanager"
+           android:text="QUẢN LÝ"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textSize="20sp"
+           android:background="@drawable/button_shape"
+           android:layout_width="120dp"
+           android:layout_marginBottom="10dp"
+           android:layout_height="0dp"
+           android:layout_weight="0.75"
+           />
+</LinearLayout>

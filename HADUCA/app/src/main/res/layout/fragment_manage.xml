@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="Quản lý bánh"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <ListView
+        android:id="@+id/listcake"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/list_shape"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.25"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/revenue"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_shape"
+            android:text="Thu nhập ngày" />
+        <Button
+        android:id="@+id/update"
+        android:text="Cập nhật"
+        android:background="@drawable/button_shape"
+        android:layout_width="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="60dp"/>
+        <Button
+            android:id="@+id/delall"
+            android:text="XÓA HẾT"
+            android:background="@drawable/button_shape_del"
+            android:layout_width="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
